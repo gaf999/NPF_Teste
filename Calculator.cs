@@ -11,6 +11,14 @@ namespace NPF_Teste
         /// <summary>
         /// Para uma dada lista de Numeros, verifica se é multiplo de 11 e 
         /// devolve uma lista de valores, numero(string)/isMultiple(bool)
+        /// Este calculo parte desta premissa:
+        /// 
+        /// 
+        /// Um número é divisível por 11, 
+        /// caso a soma dos algarismos de ordem par subtraídos da soma dos algarismos de ordem ímpar, 
+        /// resultar em um número divisível por 11. 
+        /// Caso o resultado seja igual a 0, pode-se afirmar também que é divisível por 11.
+        /// 
         /// </summary>
         /// <param name="numbers"></param>
         /// <returns></returns>
