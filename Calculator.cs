@@ -1,8 +1,5 @@
 ﻿using NPF_Teste.Objectos;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace NPF_Teste
 {
@@ -12,7 +9,6 @@ namespace NPF_Teste
         /// Para uma dada lista de Numeros, verifica se é multiplo de 11 e 
         /// devolve uma lista de valores, numero(string)/isMultiple(bool)
         /// Este calculo parte desta premissa:
-        /// 
         /// 
         /// Um número é divisível por 11, 
         /// caso a soma dos algarismos de ordem par subtraídos da soma dos algarismos de ordem ímpar, 
@@ -31,7 +27,7 @@ namespace NPF_Teste
                 Result itemResult = new Result() { number = n, isMultiple = false }; // by default
                 
                 string numero = n.Trim(); // trim dos espaços
-                int size = numero.ToString().Length; //tamanho da string
+                int size = numero.Length; //tamanho da string
                 int sums = 0;
 
                 try
